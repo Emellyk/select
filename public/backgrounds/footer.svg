@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 224" width="1024" height="224">
+	<title>Novo Projeto</title>
+	<defs>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="23.070280702519653" dy="6.615296539607981" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".1"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f2" ><feDropShadow dx="3.4999999999999982" dy="6.062177826491071" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".1"/></filter>
+	</defs>
+	<style>
+		.s0 { fill: #001f55 } 
+		.s1 { filter: url(#f1);fill: #f37a02 } 
+		.s2 { filter: url(#f2);fill: #f37a02 } 
+	</style>
+	<path id="Forma 3" class="s0" d="m-368 35h1646.9v208h-1646.9z"/>
+	<path id="Forma 2" class="s1" d="m797 163.6l113.5 196.6h227l113.5-196.6-113.5-196.6h-227z"/>
+	<path id="Forma 2 copy" class="s2" d="m-227 163.6l113.5 196.6h227l113.5-196.6-113.5-196.6h-227z"/>
+</svg>
