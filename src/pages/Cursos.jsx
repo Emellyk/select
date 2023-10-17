@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Courses } from "../components/courses";
-import MaterialSlider from "../components/materialSlider";
-import Plans from "../components/plans";
+import { Container, Box } from "@chakra-ui/react";
+
 import { Ages } from "../components/ages";
+import MaterialSlider from "../components/materialSlider";
+import { Courses } from "../components/courses";
+import Plans from "../components/plans";
 import Testimonials from "../components/testimonials";
 
-import { Container, Box } from "@chakra-ui/react";
 
 function Cursos() {
   return (

@@ -9,7 +9,7 @@ function Eja() {
       <Box
         w="full"
         h="42vh"
-        backgroundImage="./backgrounds/planos.svg"
+        backgroundImage="./backgrounds/colegio.png"
         backgroundSize="cover"
       />
 
