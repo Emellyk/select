@@ -15,6 +15,7 @@ import MaterialSlider from "../components/materialSlider";
 import Header from "../components/header";
 import About from "../components/about";
 import { Ages } from "../components/ages";
+import Organizational from "../components/organizational";
 
 function Home() {
   return (
@@ -22,11 +23,7 @@ function Home() {
       <Header />
       <About />
       <SimpleSlider />
-
-      
-      <Text align={"center"} pt={20}>
-        Missão - Visão - Valores
-      </Text>
+      <Organizational />
     </>
   );
 }

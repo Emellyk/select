@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Cursos from "./pages/Cursos.jsx";
-
+import Eja from "./pages/Eja.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/cursos",
         element: <Cursos />,
+      },
+      {
+        path: "/eja",
+        element: <Eja />,
       },
     ],
   },
