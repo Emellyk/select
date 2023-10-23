@@ -14,19 +14,23 @@ export function Ages() {
   return (
     <>
       <Container maxW={"100%"}>
-        <Container maxW="1024px" pt="24">
+        <Container maxW="1024px" pt={{ base: "18", md: "24" }}>
           <Text
             bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
             bgClip="text"
-            fontSize="3xl"
+            fontSize={{ base: "xl", md: "3xl" }}
             fontWeight="bold"
             align="center"
           >
             O ENSINO PENSADO PARA TODAS AS FASES DE SUA VIDA
           </Text>
-          <Text fontSize="xl" fontWeight="light" align="center" pt="5">
-            Com profissionais qualificados para transmitir o conhecimento com a{" "}
-            <br />
+          <Text
+            fontSize={{ base: "sm", md: "xl" }}
+            fontWeight="light"
+            align="center"
+            pt="5"
+          >
+            Com profissionais qualificados para transmitir o conhecimento com a
             linguagem correta para cada faixa etária.
           </Text>
 
@@ -53,7 +57,7 @@ export function Ages() {
                 >
                   CRIANÇAS
                 </Text>
-                <Text align="center">
+                <Text align="center" fontSize={{ base: "sm", md: "md" }}>
                   Linguagem adequada para a idade, de forma lúdica e divertida
                   para aprenderem a forma correta e segura a manusear o
                   computador
@@ -76,7 +80,7 @@ export function Ages() {
                 >
                   JOVENS
                 </Text>
-                <Text align="center">
+                <Text align="center" fontSize={{ base: "sm", md: "md" }}>
                   Com linguagem específica para esse momento, abordagem das
                   melhores formas para ingressarem ao mercado de trabalho
                 </Text>
@@ -98,7 +102,7 @@ export function Ages() {
                 >
                   ADULTOS
                 </Text>
-                <Text align="center">
+                <Text align="center" fontSize={{ base: "sm", md: "md" }}>
                   Aprender no seu tempo, com atividades práticas e aulas extras
                   para a fixação do conteúdo.
                 </Text>

@@ -13,19 +13,26 @@ import {
 export default function About() {
   return (
     <>
-      <SimpleGrid pt="8">
-        <Flex>
+      <SimpleGrid
+        pt={{ base: "0", md: "8" }}
+        maxW={{ base: "90%", md: "100%" }}
+      >
+        <Flex flexDirection={{ base: "column", md: "row" }}>
           <Image
             src="./images/fachada.svg"
-            width="940px"
+            width={{ base: '320px', md: '420px', xl: "880px" }}
             marginLeft={"-2"}
             roundedEnd={"40px"}
           />
-          <Box pl="12" pr={"40"}>
+          <Box
+            pt={{ base: "4", md: "0" }}
+            pl={{ base: "6", md: "12" }}
+            pr={{ base: "6", md: "40" }}
+          >
             <Heading
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+              fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "6xl" }}
             >
               <Text
                 as={"span"}
@@ -48,26 +55,33 @@ export default function About() {
                 TRAINING
               </Text>
             </Heading>
-            <Text pt="5">
-              Há mais de 10 anos a Select Training é escolhida como a melhor <br/>
-              escola de treinamentos e cursos de informática em Sinop, com <br/>
+            <Text pt="5" fontSize={{ base: "xs", md: "md" }}>
+              Há mais de 10 anos a Select Training é escolhida como a melhor
+              <br />
+              escola de treinamentos e cursos de informática em Sinop, com
+              <br />
               certificado reconhecido em todo território nacional.
             </Text>
-            <Text pt="5">- informações</Text>
-            <Text pt="5">- informações</Text>
-            <Text pt="5">- informações</Text>
-            <Text pt="5">- informações</Text>
+            <Text pt="5" fontSize={{ base: "xs", md: "md" }}>
+              Select, recebe em 2023 o prêmio <b>DESTAQUE EMPRESARIAL</b>, em
+              três categorias:
+              <br />
+              - Escola de Informática <br />
+              - Escola de Qualificação Profissional <br />- Escola de Oratória{" "}
+            </Text>
           </Box>
         </Flex>
       </SimpleGrid>
 
-      <SimpleGrid py="24">
-        <Flex justifyContent={"flex-end"}>
-          <Box pr="12" pl="40" align="end">
+      <SimpleGrid py={{ sm: '20', md: "24"}}>
+        <Flex flexDirection={{ base: "column", md: "row" }}
+          justifyContent={"flex-end"}
+        >
+          <Box align="end">
             <Heading
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+              fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "6xl" }}
             >
               <Text
                 as={"span"}
@@ -90,22 +104,26 @@ export default function About() {
                 SELECT
               </Text>
             </Heading>
-            <Text pt="5" pl={'20'}>
-              Sistema de Ensino EJA. <br/>
-              Com a conclusão do Ensino fundamental e o Ensino Médio <br/>
+            <Text pt="5" pl={"20"} fontSize={{ base: "xs", md: "md" }}>
+              Sistema de Ensino EJA. <br />
+              Com a conclusão do Ensino fundamental e o Ensino Médio <br />
               você já estará com as portas abertas para o mercado de trabalho.
+              <br />
             </Text>
-            <Text pt="5">informações -</Text>
-            <Text pt="5">informações -</Text>
-            <Text pt="5">informações -</Text>
-            <Text pt="5">informações -</Text>
-          </Box>
+            <Text pt="5" fontSize={{ base: "xs", md: "md" }}>
+              Select, recebe em 2023 o prêmio <b>MÉRITO LOGISTA</b>, como:
+              <br />- Melhor EJA de Sinop/MT
+            </Text>
+            </Box>
           <Image
-            src="./images/fachada.svg"
-            width="940px"
-            marginRight={"-4"}
+          justifyContent={"flex-end"}
+          align={'end'}
+            src="./images/fachada2.svg"
+            width={{ base: "360px", xl: "880px" }}
             roundedStart={"40px"}
-          />
+            marginLeft={8}
+            mt={'2'}
+            />
         </Flex>
       </SimpleGrid>
     </>

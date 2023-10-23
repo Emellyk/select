@@ -24,7 +24,7 @@ export default function Plans() {
         w="full"
         h="42vh"
         backgroundImage="./backgrounds/planos.svg"
-        backgroundSize="cover"
+        backgroundSize='cover'
       />
 
       <Heading
@@ -65,28 +65,13 @@ export default function Plans() {
         Escolha o plano ideal para você
       </Text>
 
-      {/*}
-        <Text
-          fontSize="6xl"
-          fontWeight={'bold'}
-          align={'center'}
-          color={'orange.900'}
-          pt="5"
-        >
-          PLANOS DE CARREIRA
-        </Text>
-        <Text fontSize="3xl" align={'center'} color="yellow.500">
-          Escolha o plano ideal para você
-        </Text>
-  
-  
-              */}
 
-      <SimpleGrid minChildWidth={"4"} spacing={"8"} px={"40"} py={"10"}>
+      <SimpleGrid minChildWidth={{ sm: '1', md: "4"}} spacing={"8"} 
+      px={{ base:'10', md: "40"}} py={"10"}>
         <Card boxShadow={"2xl"} rounded={"xl"}>
           <CardHeader h={"280"}>
             <Text
-              fontSize={"xl"}
+              fontSize={{ base: "sm", md: "xl" }}
               fontWeight={500}
               bg={"orange.100"}
               p={2}
@@ -98,7 +83,7 @@ export default function Plans() {
               PLANO 1
             </Text>
             <Text
-              fontSize={"3xl"}
+              fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
               fontWeight="bold"
               color="blue.900"
               align={"center"}
@@ -108,7 +93,7 @@ export default function Plans() {
             </Text>
           </CardHeader>
           <CardBody bg={"gray.50"} px={6} py={2}>
-            <List spacing={3}>
+            <List spacing={3} fontSize={{ base: "xs", sm: "md", lg: "xl" }}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="green.400" />
                 Domine os principais programas do computador e aprenda a magia

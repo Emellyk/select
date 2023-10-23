@@ -7,7 +7,8 @@ import {
     Text,
     Container,
     Image,
-    Link
+    Link,
+    SimpleGrid
   } from '@chakra-ui/react'
   
   import { FaWhatsapp, FaMapMarkerAlt, FaGifts } from 'react-icons/fa'
@@ -23,17 +24,21 @@ import {
   export function Contact() {
     return (
       <>
-        <Box padding="14">
+        <Box py="6">
           <Divider />
         </Box>
   
-        <Container maxW="1324" pb={'10'}>
-          <Flex gap="10" justifyContent="space-between">
+        <Container maxW={{ base: '90%', md: '70%' }} pb={'10'} >
+          <SimpleGrid columns={{ base: 1, md: 3 }} align={'center'}>
             <Box>
-              <Text fontSize="2xl" color={'orange.900'}>
+              <Text 
+              fontSize={{ base: 'xl', md: '2xl' }} 
+              color={'orange.900'}>
                 ATENDIMENTO SELECT
               </Text>
-              <Text color="#014181" fontSize="md" pt="2">
+              <Text 
+              fontSize="md"
+              color="#014181"  pt="2">
                 (66) 3531-4428
               </Text>
               <Text color="#014181" fontSize="md" pb={'2'}>
@@ -45,17 +50,21 @@ import {
                 fontSize={'x-large'}
                 fontWeight={'normal'}
                 leftIcon={<lord-icon src="/icons/icon-whats.json" trigger="hover" />}
-                w={'full'}
+                w={'80%'}
               >
                 Matricule-se
               </Button>
             </Box>
-            <Box>
-              <Text fontSize="2xl" color="#F37A02">
+            <Box
+            mt={{base: '8', md: '0'}} align={'center'}
+            >
+              <Text 
+              fontSize={{ base: 'xl', md: '2xl' }}
+               color="#F37A02">
                 SIGA NOSSAS REDES SOCIAIS
               </Text>
-              <Flex align="center">
-                <Image src="/icons/face.svg" maxW="50px" />
+              <Flex pt={2} align="center" >
+                <Image src="/icons/facebook.png" maxW="40px" />
                 <Link
                   color="blue.500"
                   fontSize="md"
@@ -70,8 +79,8 @@ import {
                   Escola Select Training
                 </Link>
               </Flex>
-              <Flex align="center" pt="2">
-                <Image src="/icons/insta.svg" maxW="52px" />
+              <Flex align="center" pt="2" >
+                <Image src="/icons/instagram.png" maxW="42px" />
                 <Link
                   color="blue.500"
                   fontSize="md"
@@ -86,8 +95,8 @@ import {
                   @selecttraining
                 </Link>
               </Flex>
-              <Flex align="center" pt="2" pb="2">
-                <Image src="/icons/youtube.svg" maxW="46px" />
+              <Flex align="center" pt="1" pb="2"  >
+                <Image src="/icons/youtube.png" maxW="42px" />
                 <Link
                   color="blue.500"
                   fontSize="md"
@@ -104,21 +113,23 @@ import {
               </Flex>
             </Box>
   
-            <Box>
-              <Text fontSize="2xl" color="#F37A02">
+            <Box mt={{base: '6', md: '0'}}>
+              <Text 
+              fontSize={{ base: 'xl', md: '2xl' }}
+               color="#F37A02">
                 LOCALIZAÇÃO
               </Text>
-              <Text color="#014181" fontSize="md" pt="2" pb="2">
+              <Text color="#014181" fontSize="sm" pt="2" pb="2">
                 Rua das Primaveras, 2774 - Centro - Sinop/MT
               </Text>
   
               <Button
                 src="https://maps.app.goo.gl/jZuPj3MkAXmuxZER9"
                 leftIcon={<lord-icon src="/icons/icon-locate.json" trigger="hover" />}
-                w={'220px'}
+                w={'80%'}
                 bg={'orange.900'}
                 color={'white'}
-                rounded={'xl'}
+                rounded={'md'}
                 boxShadow={'0 5px 20px 0px rgb(215 215 215 / 100%)'}
                 _hover={{
                   bg: 'orange.500'
@@ -130,7 +141,7 @@ import {
                 Abrir no GoogleMaps
               </Button>
             </Box>
-          </Flex>
+          </SimpleGrid>
         </Container>
       </>
     )

@@ -13,9 +13,10 @@ function Cursos() {
     <>
           <Box
         w="full"
-        h="42vh"
+        h={{ base: '28vh', md: "42vh"}}
         backgroundImage="./backgrounds/planos.svg"
         backgroundSize="cover"
+        backgroundPosition={'center'}
       />
       
       <Container
@@ -29,7 +30,7 @@ function Cursos() {
         <MaterialSlider />
       </Container>
 
-      <Courses />
+
       <Plans />
       <Testimonials />
     </>

@@ -9,6 +9,7 @@ import {
   Flex,
   Box,
   Text,
+  Image,
   Card,
   Container,
   Stack,
@@ -42,12 +43,12 @@ export default class MaterialSlider extends Component {
               background={'linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)'}
               bgClip={'text'}
               pt={'10'}
-              fontSize="4xl"
+              fontSize={{ base: "xl", md: "3xl" }}
               fontWeight="bold"
             >
               MATERIAL DIDÁTICO EXCLUSIVO SELECT
             </Text>
-            <Text fontSize="xl" fontWeight="light" align="center" pt="5">
+            <Text fontSize={{ base: "sm", md: "xl" }} fontWeight="light" align="center" pt="5">
                   Kits de Materiais exclusivos diagramados por nossos
                   professores, adaptado de acordo com a faixa etária.
                   Todos os kits possuem camiseta, bolsa, apostila e caneta.
@@ -60,7 +61,8 @@ export default class MaterialSlider extends Component {
               spacing={4}
               templateColumns="repeat(auto-fill, minmax(400px, 1fr))"
             >
-              <Card bgColor={'transparent'} textAlign={'justify'} fontWeight={'light'} variant={'unstyled'} color={'blue.900'} fontSize={'18'} >
+              <Card bgColor={'transparent'} textAlign={'justify'} fontWeight={'light'} variant={'unstyled'} color={'blue.900'} 
+              fontSize={{ base: "sm", md: "xl" }} >
                 <Text pt={'14'}>
                   - Manutenção de Computadores: com ferramentas extras para cada
                   aluno ter o seu para desmontagem dos equipamentos
@@ -74,22 +76,22 @@ export default class MaterialSlider extends Component {
               <Stack
               pt={'14'}
               bgImage={'/backgrounds/material.svg'}
-              bgSize={'450px'}
+              bgSize={{ base: '300px', md:'450px'}}
               bgRepeat={'no-repeat'}
               bgPos={'center'}
               >
                 <Slider {...settings} >
                   <div>
-                    <img src="/images/material.svg" />
+                    <Image w={{ base: '300px', md: 'auto'}} src="/images/material.svg" />
                   </div>
                   <div>
-                    <img src="/images/material.svg" />
+                    <Image w={{ base: '300px', md: 'auto'}} src="/images/material.svg" />
                   </div>
                   <div>
-                    <img src="/images/material.svg" />
+                    <Image w={{ base: '300px', md: 'auto'}} src="/images/material.svg" />
                   </div>
                   <div>
-                    <img src="/images/material.svg" />
+                    <Image w={{ base: '300px', md: 'auto'}} src="/images/material.svg" />
                   </div>
                 </Slider>
               </Stack>
