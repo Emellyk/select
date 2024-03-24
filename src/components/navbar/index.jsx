@@ -18,6 +18,7 @@ const NavBar = (props) => {
 const Logo = () => 
 <Image 
  w={{ base: '50px', sm: '70px', lg: '100px' }}
+ ml={10}
  src="./logomarca.svg"></Image>;
 
 const CloseIcon = () => (
@@ -65,7 +66,8 @@ const MenuLinks = ({ isOpen }) => {
     <Box
       display={{ base: isOpen ? "row" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
-      pb={2}
+      mx={8}
+      pb={1}
     >
       <Stack
         spacing={{ base: '2', sm: '4', lg: '8' }}
@@ -102,12 +104,12 @@ const NavBarContainer = ({ children, ...props }) => {
       as="nav"
       align="center"
       justify="space-between"
-      pos={"sticky"}
+      pos={"fixed"}
+      shadow={"lg"}
       zIndex={2}
       wrap="wrap"
       w="100%"
-      mb={2}
-      p={2}
+      mr={4}
       bg={["orange.900", "orange.900", "orange.900", "orange.900"]}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}

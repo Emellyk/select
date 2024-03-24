@@ -32,7 +32,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function Organizational() {
   return (
-    <Container maxW={{ base: '90%', md: '70%'}} pt={16}>
+    <Container maxW={{ base: '90%', md: '70%'}} pt={16} pb={16}>
     <Box p={4} textAlign={'center'}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature

@@ -14,12 +14,13 @@ export default function About() {
   return (
     <>
       <SimpleGrid
-        pt={{ base: "0", md: "8" }}
+        pt={{ base: "0", md: "20" }}
         maxW={{ base: "90%", md: "100%" }}
       >
         <Flex flexDirection={{ base: "column", md: "row" }}>
           <Image
             src="./images/fachada.svg"
+            mt={{ base: '8', md: '0'}}
             width={{ base: '320px', md: '420px', xl: "880px" }}
             marginLeft={"-2"}
             roundedEnd={"40px"}
@@ -77,7 +78,8 @@ export default function About() {
         <Flex flexDirection={{ base: "column", md: "row" }}
           justifyContent={"flex-end"}
         >
-          <Box align="end">
+          <Box align="end"
+          mr={6}>
             <Heading
               lineHeight={1.1}
               fontWeight={600}
@@ -119,7 +121,7 @@ export default function About() {
           justifyContent={"flex-end"}
           align={'end'}
             src="./images/fachada2.svg"
-            width={{ base: "360px", xl: "880px" }}
+            width={{ base: "334px", xl: "880px" }}
             roundedStart={"40px"}
             marginLeft={8}
             mt={'2'}

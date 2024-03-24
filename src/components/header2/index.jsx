@@ -16,12 +16,11 @@ export default function Header2() {
   return (
     <>
       <Box
-      mt={{ base: '-2', md: '-4', xl: '-70'}}
     as='video'
     muted
     loop
     autoPlay='true'
-    src='/backgrounds/hero3.mp4'
+    src='/backgrounds/hero5.mp4'
     alt='hero'
     objectFit='contain'
     maxH={'cover'}
