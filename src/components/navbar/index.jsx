@@ -80,18 +80,8 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/"> Sobre a Escola </MenuItem>
         <MenuItem to="/cursos"> Planos de Carreira </MenuItem>
         <MenuItem to="/eja"> Ensino EJA </MenuItem>
-        <MenuItem to="/signup" isLast>
-          <Button
-            variant={"primary"}
-            fontSize={{ base: 'sm', sm: 'sm', lg: 'xl' }}
-            fontWeight={"normal"}
-            leftIcon={
-              <lord-icon src="/icons/icon-whats.json" trigger="hover" />
-            }
-            w={{ base: '140px', sm: '160px', lg: '240px' }}
-          >
-            Matricule-se
-          </Button>
+        <MenuItem isLast>
+        
         </MenuItem>
       </Stack>
     </Box>

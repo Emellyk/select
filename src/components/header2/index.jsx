@@ -20,7 +20,7 @@ export default function Header2() {
     muted
     loop
     autoPlay='true'
-    src='/backgrounds/hero5.mp4'
+    src='/backgrounds/hero6.mp4'
     alt='hero'
     objectFit='contain'
     maxH={'cover'}

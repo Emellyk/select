@@ -125,6 +125,7 @@ export default function Plans() {
               _focus={{
                 bg: "orange.500",
               }}
+              href='https://api.whatsapp.com/send?phone=5566999712567'
             >
               Escolher plano
             </Button>
