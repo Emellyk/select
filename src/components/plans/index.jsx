@@ -112,23 +112,6 @@ export default function Plans() {
             </List>
           </CardBody>
           <CardFooter bg={"gray.50"} rounded={"xl"}>
-            <Button
-              w={"full"}
-              bg={"orange.900"}
-              color={"white"}
-              fontSize={{base:  "sm", md: "md" }}
-              rounded={"xl"}
-              boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
-              _hover={{
-                bg: "orange.500",
-              }}
-              _focus={{
-                bg: "orange.500",
-              }}
-              href='https://api.whatsapp.com/send?phone=5566999712567'
-            >
-              Escolher plano
-            </Button>
           </CardFooter>
         </Card>
 
@@ -175,22 +158,6 @@ export default function Plans() {
             </List>
           </CardBody>
           <CardFooter bg={"gray.50"} rounded={"xl"}>
-            <Button
-              w={"full"}
-              bg={"orange.900"}
-              color={"white"}
-              fontSize={{base:  "sm", md: "md" }}
-              rounded={"xl"}
-              boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
-              _hover={{
-                bg: "orange.500",
-              }}
-              _focus={{
-                bg: "orange.500",
-              }}
-            >
-              Escolher plano
-            </Button>
           </CardFooter>
         </Card>
 
@@ -236,22 +203,6 @@ export default function Plans() {
             </List>
           </CardBody>
           <CardFooter bg={"gray.50"} rounded={"xl"}>
-            <Button
-              w={"full"}
-              bg={"orange.900"}
-              color={"white"}
-              fontSize={{base:  "sm", md: "md" }}
-              rounded={"xl"}
-              boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
-              _hover={{
-                bg: "orange.500",
-              }}
-              _focus={{
-                bg: "orange.500",
-              }}
-            >
-              Escolher plano
-            </Button>
           </CardFooter>
         </Card>
 
@@ -300,22 +251,6 @@ export default function Plans() {
             </List>
           </CardBody>
           <CardFooter bg={"gray.50"} rounded={"xl"}>
-            <Button
-              w={"full"}
-              bg={"orange.900"}
-              color={"white"}
-              fontSize={{base:  "sm", md: "md" }}
-              rounded={"xl"}
-              boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
-              _hover={{
-                bg: "orange.500",
-              }}
-              _focus={{
-                bg: "orange.500",
-              }}
-            >
-              Escolher plano
-            </Button>
           </CardFooter>
         </Card>
       </SimpleGrid>

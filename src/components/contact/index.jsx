@@ -41,17 +41,6 @@ export function Contact() {
               Segunda à Sábado,
               <br /> das 07:30 às 20:00.
             </Text>
-            <Button
-              variant={"primary"}
-              fontSize="xl"
-              fontWeight={"normal"}
-              leftIcon={
-                <lord-icon src="/icons/icon-whats.json" trigger="hover" />
-              }
-              w={{ base: "70%", md: "80%"}}
-            >
-              Matricule-se
-            </Button>
           </Box>
           <Box mt={{ base: "8", md: "0" }} align={"center"}>
             <Text fontSize={{ base: "xl", md: "2xl" }} color="#F37A02">
@@ -119,27 +108,6 @@ export function Contact() {
             >
               Rua das Primaveras, 2774 - Centro - Sinop/MT
             </Text>
-
-            <Button
-              src="https://maps.app.goo.gl/jZuPj3MkAXmuxZER9"
-              leftIcon={
-                <lord-icon src="/icons/icon-locate.json" trigger="hover" />
-              }
-              w={{ base: "70%", md: "80%"}}
-              bg={"orange.900"}
-              color={"white"}
-              fontSize={{ base: 'sm', md: "md"}}
-              rounded={"md"}
-              boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
-              _hover={{
-                bg: "orange.500",
-              }}
-              _focus={{
-                bg: "orange.500",
-              }}
-            >
-              Abrir no GoogleMaps
-            </Button>
           </Box>
         </SimpleGrid>
       </Container>
