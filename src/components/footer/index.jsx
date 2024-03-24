@@ -13,7 +13,7 @@ export function Footer() {
         <Text
           color="white"
           align="center"
-          fontSize={{ base: "10", md: "20"}}
+          fontSize={{ base: "2xs", md: "20"}}
           fontWeight={{ base: "normal", md: "bold"}}
           pt={{ base: "6", md: "20"}}
         >

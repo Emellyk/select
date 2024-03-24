@@ -22,7 +22,7 @@ function Cursos() {
       <Container
         maxW={"full"}
         bgImage="/backgrounds/idades.svg"
-        bgSize="cover"
+        bgSize={{ base: "contain", md: "cover"}}
         bgAttachment="fixed"
         pos="relative"
       >
@@ -30,7 +30,7 @@ function Cursos() {
         <MaterialSlider />
       </Container>
 
-
+<Courses/>
       <Plans />
       <Testimonials />
     </>

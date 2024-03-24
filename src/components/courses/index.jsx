@@ -24,18 +24,23 @@ export function Courses() {
             bgClip={"text"}
             align={"center"}
             pt={"10"}
-            fontSize="4xl"
+            fontSize={{ base: '2xl', md: "4xl"}}
             fontWeight="bold"
           >
             O CURSO IDEAL PARA VOCÊ ESTÁ AQUI
           </Text>
-          <Text fontSize="xl" fontWeight="light" align="center" py="5">
+          <Text fontSize={{ base: 'sm', md: "xl"}} fontWeight="light" align="center" py="5">
             Conheça nossos cursos e escolha o que mais combina com você
           </Text>
 
-          <Tabs variant={"tabsTheme"} orientation="vertical" py={"8"}>
+          <Tabs variant={"tabsTheme"} 
+          maxWidth={'90%'}
+          orientation={{ base: 'vertical', md: "vertical"}} 
+          size={'sm'}
+          py={"8"}
+          fontSize={'sm'}>
             <TabList mt={"4"}>
-              <Tab>Operador de Computador</Tab>
+              <Tab fontSize={{ base: 'sm', md: 'md' }}>Operador de Computador</Tab>
               <Tab>Designer Gráfico</Tab>
               <Tab>Manutenção em Comp. e Notbooks</Tab>
               <Tab>AutoCAD</Tab>
@@ -48,9 +53,9 @@ export function Courses() {
               {/* OPERADOR DE COMPUTADOR */}
               <TabPanel>
                 <SimpleGrid
-                  gap="6"
+                  gap="4"
                   spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
+                  templateColumns={{ base: "repeat(auto-fill, minmax(100px, 3fr))", md: "repeat(auto-fill, minmax(220px, 1fr))"}}
                 >
                   <Card
                     bgColor={"transparent"}

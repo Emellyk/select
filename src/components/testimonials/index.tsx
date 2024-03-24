@@ -56,7 +56,7 @@ import {
     const { children } = props
   
     return (
-      <Heading as={'h3'} fontSize={'xl'}>
+      <Heading as={'h3'} fontSize={{base: 'md', md: 'xl'}}>
         {children}
       </Heading>
     )
@@ -69,7 +69,7 @@ import {
       <Text
         textAlign={'center'}
         color={useColorModeValue('gray.600', 'gray.400')}
-        fontSize={'sm'}>
+        fontSize={{base: 'xs', md: 'sm'}}>
         {children}
       </Text>
     )
@@ -88,7 +88,7 @@ import {
       <Flex align={'center'} mt={8} direction={'column'}>
         <Avatar src={src} mb={2} />
         <Stack spacing={-1} align={'center'}>
-          <Text fontWeight={600}>{name}</Text>
+          <Text fontWeight={600} color={'blue.900'}>{name}</Text>
           <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
             {title}
           </Text>
@@ -106,16 +106,16 @@ import {
             bgGradient={"linear(to-tr, #EB4561, #FFEB40)"}
             bgClip={"text"}
             pt={"10"}
-            fontSize="4xl"
+            fontSize={{ base: "xl", md: "3xl"}}
             fontWeight="bold"
           >
-            O que dizem nossos alunos
+            O QUE DIZEM NOSSOS ALUNOS:
           </Text>
           </Stack>
           <Stack
            color={'orange.900'}
             direction={{ base: 'column', md: 'row' }}
-            spacing={{ base: 10, md: 4, lg: 10 }}>
+            spacing={{ base: 16, md: 4, lg: 10 }}>
             <Testimonial>
               <TestimonialContent>
                 <TestimonialHeading>Estudar na Select é incrivel</TestimonialHeading>

@@ -22,9 +22,10 @@ export default function Plans() {
     <>
       <Box
         w="full"
-        h="42vh"
+        h={{ base: '28vh', md: "42vh"}}
         backgroundImage="./backgrounds/planos.svg"
         backgroundSize='cover'
+        backgroundPosition={'center'}
       />
 
       <Heading
@@ -66,12 +67,12 @@ export default function Plans() {
       </Text>
 
 
-      <SimpleGrid minChildWidth={{ sm: '1', md: "4"}} spacing={"8"} 
+      <SimpleGrid columns={{ base: 1, md: 2, xl: 4 }} spacing={{ base: '4', md: "8"}} 
       px={{ base:'10', md: "40"}} py={"10"}>
         <Card boxShadow={"2xl"} rounded={"xl"}>
-          <CardHeader h={"280"}>
+          <CardHeader h={{ base: '180', md: "280"}}>
             <Text
-              fontSize={{ base: "sm", md: "xl" }}
+              fontSize={{ base: "sm", md: "md", xl: 'xl' }}
               fontWeight={500}
               bg={"orange.100"}
               p={2}
@@ -83,7 +84,7 @@ export default function Plans() {
               PLANO 1
             </Text>
             <Text
-              fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
+              fontSize={{ base: "xl", sm: "xl", md: 'xl', lg: "3xl" }}
               fontWeight="bold"
               color="blue.900"
               align={"center"}
@@ -115,6 +116,7 @@ export default function Plans() {
               w={"full"}
               bg={"orange.900"}
               color={"white"}
+              fontSize={{base:  "sm", md: "md" }}
               rounded={"xl"}
               boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
               _hover={{
@@ -130,9 +132,9 @@ export default function Plans() {
         </Card>
 
         <Card boxShadow={"2xl"} rounded={"xl"}>
-          <CardHeader h={"280"}>
+          <CardHeader h={{ base: '180', md: "280"}}>
             <Text
-              fontSize={"xl"}
+              fontSize={{ base: "sm", md: "xl" }}
               fontWeight={500}
               bg={"orange.100"}
               p={2}
@@ -144,7 +146,7 @@ export default function Plans() {
               PLANO 2
             </Text>
             <Text
-              fontSize={"3xl"}
+              fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
               fontWeight="bold"
               color="blue.900"
               align={"center"}
@@ -154,7 +156,7 @@ export default function Plans() {
             </Text>
           </CardHeader>
           <CardBody bg={"gray.50"} px={6} py={2}>
-            <List spacing={3}>
+            <List spacing={3} fontSize={{ base: "xs", sm: "md", lg: "xl" }}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="green.400" />
                 Fique expert em computação e aprenda a fazer manutenção em
@@ -176,6 +178,7 @@ export default function Plans() {
               w={"full"}
               bg={"orange.900"}
               color={"white"}
+              fontSize={{base:  "sm", md: "md" }}
               rounded={"xl"}
               boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
               _hover={{
@@ -191,9 +194,9 @@ export default function Plans() {
         </Card>
 
         <Card boxShadow={"2xl"} rounded={"xl"}>
-          <CardHeader h={"280"}>
+          <CardHeader h={{ base: '180', md: "280"}}>
             <Text
-              fontSize={"xl"}
+              fontSize={{ base: "sm", md: "xl" }}
               fontWeight={500}
               bg={"orange.100"}
               p={2}
@@ -205,7 +208,7 @@ export default function Plans() {
               PLANO 3
             </Text>
             <Text
-              fontSize={"3xl"}
+              fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
               fontWeight="bold"
               color="blue.900"
               align={"center"}
@@ -215,7 +218,7 @@ export default function Plans() {
             </Text>
           </CardHeader>
           <CardBody bg={"gray.50"} px={6} py={2}>
-            <List spacing={3}>
+            <List spacing={3} fontSize={{ base: "xs", sm: "md", lg: "xl" }}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="green.400" />
                 Domine os principais programas do computador e aprenda a criar
@@ -236,6 +239,7 @@ export default function Plans() {
               w={"full"}
               bg={"orange.900"}
               color={"white"}
+              fontSize={{base:  "sm", md: "md" }}
               rounded={"xl"}
               boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
               _hover={{
@@ -251,9 +255,9 @@ export default function Plans() {
         </Card>
 
         <Card boxShadow={"2xl"} rounded={"xl"}>
-          <CardHeader h={"280"}>
+          <CardHeader h={{ base: '180', md: "280"}}>
             <Text
-              fontSize={"xl"}
+              fontSize={{ base: "sm", md: "xl" }}
               fontWeight={500}
               bg={"orange.100"}
               p={2}
@@ -265,7 +269,7 @@ export default function Plans() {
               PLANO 4
             </Text>
             <Text
-              fontSize={"3xl"}
+              fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
               fontWeight="bold"
               color="blue.900"
               align={"center"}
@@ -275,7 +279,7 @@ export default function Plans() {
             </Text>
           </CardHeader>
           <CardBody bg={"gray.50"} px={6} py={2}>
-            <List spacing={3}>
+            <List spacing={3} fontSize={{ base: "xs", sm: "md", lg: "xl" }}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="green.400" />
                 Domine os programas mais requisitados no mercado de trabalho,
@@ -299,6 +303,7 @@ export default function Plans() {
               w={"full"}
               bg={"orange.900"}
               color={"white"}
+              fontSize={{base:  "sm", md: "md" }}
               rounded={"xl"}
               boxShadow={"0 5px 20px 0px rgb(215 215 215 / 100%)"}
               _hover={{

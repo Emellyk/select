@@ -56,7 +56,7 @@ export const theme = extendTheme({
     },
     green: {
       50: '#38DF58',
-      500: '#FFB504'
+      500: '#5DDF2D'
     }
   },
   fonts: {

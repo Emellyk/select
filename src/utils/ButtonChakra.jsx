@@ -8,6 +8,7 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   // define the part you're going to style
   tab: {
+    fontSize: { base: 'sm', md: 'md' },
     fontWeight: 'bold',
     rounded: 'md',
     bg: 'transparent',
