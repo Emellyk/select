@@ -12,9 +12,9 @@ function Cursos() {
   return (
     <>
           <Box
-        w="full"
-        h={{ base: '28vh', md: "42vh"}}
-        backgroundImage="./backgrounds/planos.svg"
+          w={'full'}
+        h={{ base: '26vh', md: "62vh"}}
+        backgroundImage="./backgrounds/matriculas3.png"
         backgroundSize="cover"
         backgroundPosition={'center'}
       />

@@ -22,8 +22,8 @@ export default function Plans() {
     <>
       <Box
         w="full"
-        h={{ base: '28vh', md: "42vh"}}
-        backgroundImage="./backgrounds/planos.svg"
+        h={{ base: '22vh', md: "42vh"}}
+        backgroundImage="./backgrounds/planos5.png"
         backgroundSize='cover'
         backgroundPosition={'center'}
       />

@@ -100,8 +100,8 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       w="100%"
       mr={4}
-      bg={["orange.900", "orange.900", "orange.900", "orange.900"]}
-      color={["white", "white", "primary.700", "primary.700"]}
+      bg={["transparent", "transparent", "transparent", "transparent"]}
+      color={["orange.900", "orange.900", "primary.700", "primary.700"]}
       {...props}
     >
       {children}

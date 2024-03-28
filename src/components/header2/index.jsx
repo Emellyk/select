@@ -20,7 +20,7 @@ export default function Header2() {
     muted
     loop
     autoPlay='true'
-    src='/backgrounds/hero6.mp4'
+    src='/backgrounds/newhero2.mp4'
     alt='hero'
     objectFit='contain'
     maxH={'cover'}
@@ -35,7 +35,7 @@ export default function Header2() {
         pb={{ base: '10', md: '20'}}
         >
           <SimpleGrid
-            mt={{ base: '-2', md: '-4', xl: '-66'}}
+            pt={20}
             spacing={{ base: 2, md: 6 }}
             columns={'4'}
             w={{ base: '100%', md: '2xl', lg: '3xl', xl: '5xl' }}
@@ -89,7 +89,7 @@ export default function Header2() {
             <Card bg="transparent" variant={"unstyled"}>
               <Image
                 objectFit="cover"
-                src="./images/premios.svg"
+                src="./images/certificados.png"
                 borderRadius="lg"
               />
               <CardBody>
@@ -111,7 +111,7 @@ export default function Header2() {
             <Card bg="transparent" variant={"unstyled"}>
               <Image
                 objectFit="cover"
-                src="./images/premios.svg"
+                src="./images/30anos2.png"
                 borderRadius="lg"
               />
               <CardBody>
@@ -122,7 +122,7 @@ export default function Header2() {
                   fontSize={{ base: '2xs', md: 'md'}}
                   pt={{ base: '2', md: '6'}}
                 >
-                  28 ANOS
+                  30 ANOS
                 </Text>
                 <Text align="center"
                 fontSize={{ base: '2xs', md: 'md'}}>

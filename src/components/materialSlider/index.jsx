@@ -20,7 +20,7 @@ export default class MaterialSlider extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 2000,
+      speed: 4000,
       autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -100,19 +100,7 @@ export default class MaterialSlider extends Component {
                   <div>
                     <Image
                       w={{ base: "300px", md: "auto" }}
-                      src="/images/material.svg"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      w={{ base: "300px", md: "auto" }}
-                      src="/images/material.svg"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      w={{ base: "300px", md: "auto" }}
-                      src="/images/material.svg"
+                      src="/images/material2.png"
                     />
                   </div>
                   <div>

@@ -64,7 +64,7 @@ export default function About() {
               certificado reconhecido em todo território nacional.
             </Text>
             <Text pt="5" fontSize={{ base: "xs", md: "md" }}>
-              Select, recebe em 2023 o prêmio <b>DESTAQUE EMPRESARIAL</b>, em
+              Select, recebe em 2024 o prêmio <b>DESTAQUE EMPRESARIAL</b>, em
               três categorias:
               <br />
               - Escola de Informática <br />
@@ -113,7 +113,7 @@ export default function About() {
               <br />
             </Text>
             <Text pt="5" fontSize={{ base: "xs", md: "md" }}>
-              Select, recebe em 2023 o prêmio <b>MÉRITO LOGISTA</b>, como:
+              Select, recebe em 2024 o prêmio <b>MÉRITO LOGISTA</b>, como:
               <br />- Melhor EJA de Sinop/MT
             </Text>
             </Box>

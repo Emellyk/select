@@ -8,8 +8,8 @@ function Eja() {
     <>
       <Box
         w="full"
-        h="42vh"
-        backgroundImage="./backgrounds/colegio.png"
+        h="62vh"
+        backgroundImage="./backgrounds/colegio3.png"
         backgroundSize="cover"
       />
 

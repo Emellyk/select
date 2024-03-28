@@ -103,7 +103,7 @@ export default function Ensino() {
                 </Stack>
               </SimpleGrid>
             </Box>
-            <Image src="./images/eja.svg" width="440px" rounded={"10px"} />
+            <Image src="./images/eja2.png" width="440px" rounded={"10px"} />
           </Flex>
         </SimpleGrid>
 
