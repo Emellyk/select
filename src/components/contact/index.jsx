@@ -24,47 +24,46 @@ defineElement(lottie.loadAnimation);
 export function Contact() {
   return (
     <>
-    <Box 
-    h={'72vh'}
-    backgroundImage="/images/footer4.png"
+    <Box
+    bgColor={'#eb2a3d'}
+    backgroundImage="/images/footer5.png"
     backgroundRepeat="no-repeat"
+    backgroundSize={{ base: 'contain', md: 'cover'}}
+    bgPosition={'100% 100%'}
     >
 
-      <Box px={'60'}>
-        <Divider pt={'20'} borderColor={'orange.900'}/>
-      </Box>
 
       <Container
-      py="24"
+      py={{ base:'14', md: '24'}}
       maxW={{ base: "90%", md: "70%" }} pb={"10"}>
         <SimpleGrid columns={{ base: 1, md: 3 }} align={"center"}>
           <Box>
             <Text fontSize={{ base: "xl", md: "2xl" }} 
-            bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
+            bgGradient="linear-gradient(107deg, #43e8ed 38.38%, #FFEB40 107.75%)"
             bgClip="text"
             fontWeight="bold"> 
               ATENDIMENTO SELECT
             </Text>
-            <Text fontSize={{ base: "sm", md: "md" }} color="blue.900" pt="8">
+            <Text fontSize={{ base: "16px", md: "md" }} color="white" pt="4">
               (66) 3531-4428
             </Text>
-            <Text color="blue.900" fontSize={{ base: "sm", md: "md" }} pb={"2"}>
+            <Text color="white" fontSize={{ base: "16px", md: "md" }} pb={"2"}>
               Segunda à Sábado,
               <br /> das 07:30 às 20:00.
             </Text>
           </Box>
-          <Box mt={{ base: "8", md: "0" }} align={"center"}>
+          <Box mt={{ base: "10", md: "0" }} align={"center"}>
             <Text fontSize={{ base: "xl", md: "2xl" }} 
-            bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
+            bgGradient="linear-gradient(107deg, #43e8ed 38.38%, #FFEB40 107.75%)"
             bgClip="text"
             fontWeight="bold">
               SIGA NOSSAS REDES SOCIAIS
             </Text>
-            <Flex pt={8} align="center">
-              <Image src="/icons/facebook.png" maxW="40px" />
+            <Flex pt={4} align="center">
+              <Image src="/icons/facebook.png" maxW={{ base: '22px', md:"40px" }}/>
               <Link
-                color="blue.900"
-                fontSize={{ base: "sm", md: "md" }}
+                color="white"
+                fontSize={{ base: "16px", md: "md" }}
                 textDecoration={"none"}
                 _hover={{
                   color: "blue.200",
@@ -77,10 +76,10 @@ export function Contact() {
               </Link>
             </Flex>
             <Flex align="center" pt="2">
-              <Image src="/icons/instagram.png" maxW="42px" />
+              <Image src="/icons/instagram.png" maxW={{ base: '22px', md:"40px" }} />
               <Link
-                color="blue.900"
-                fontSize={{ base: "sm", md: "md" }}
+                color="white"
+                fontSize={{ base: "16px", md: "md" }}
                 textDecoration={"none"}
                 _hover={{
                   color: "blue.200",
@@ -93,10 +92,10 @@ export function Contact() {
               </Link>
             </Flex>
             <Flex align="center" pt="1" pb="2">
-              <Image src="/icons/youtube.png" maxW="42px" />
+              <Image src="/icons/youtube.png" bgColor={'white'} p={1} rounded={4} maxW={{ base: '22px', md:"40px" }}/>
               <Link
-                color="blue.900"
-                fontSize={{ base: "sm", md: "md" }}
+                color="white"
+                fontSize={{ base: "16px", md: "md" }}
                 textDecoration={"none"}
                 _hover={{
                   color: "blue.200",
@@ -110,17 +109,17 @@ export function Contact() {
             </Flex>
           </Box>
 
-          <Box mt={{ base: "6", md: "0" }}>
+          <Box mt={{ base: "10", md: "0" }}>
             <Text fontSize={{ base: "xl", md: "2xl" }} 
-            bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
+            bgGradient="linear-gradient(107deg, #43e8ed 38.38%, #FFEB40 107.75%)"
             bgClip="text"
             fontWeight="bold">
               LOCALIZAÇÃO
             </Text>
             <Text
-              color="blue.900"
-              fontSize={{ base: "sm", md: "md" }}
-              pt="8"
+              color="white"
+              fontSize={{ base: "14px", md: "md" }}
+              pt="4"
               pb="2"
             >
               Rua das Primaveras, 2774 - Centro - Sinop/MT
@@ -128,9 +127,9 @@ export function Contact() {
           </Box>
         </SimpleGrid>
 
-        <Box mt={'28'} mr={20}>
+        <Box mt={{ base: '4', md: '28'}} mr={{base: '10', md:  '20'}}>
         <Text
-          bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
+          bgGradient="linear-gradient(107deg, #43e8ed 38.38%, #FFEB40 107.75%)"
           bgClip="text"
           align="center"
           fontSize={{ base: "2xs", md: "20"}}
@@ -141,7 +140,7 @@ export function Contact() {
         </Text>
         <Text 
         fontSize={{ base: "8", md: "16"}}
-        bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
+        bgGradient="linear-gradient(107deg, #43e8ed 38.38%, #FFEB40 107.75%)"
             bgClip="text" 
         align="center">
           Todos os direitos reservados | <b>SELECT TRAINING © 2024</b>
