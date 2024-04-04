@@ -17,9 +17,10 @@ export default function Ensino() {
   return (
     <>
       <Container maxW={1324}>
-        <SimpleGrid py="24">
-          <Flex>
-            <Box pr="4" pl="20">
+        <SimpleGrid py={{base: 10, md: 24}}>
+          <Flex display={{ base: 'row', md: 'flex'}}>
+            <Box pr={{ base: 0, md: 4}} 
+            pl={{base: 2, md: 20}}>
               <Heading
                 lineHeight={1.1}
                 fontWeight={600}
@@ -50,9 +51,9 @@ export default function Ensino() {
                 fontWeight={600}
                 fontSize={{ base: "1xl", sm: "2xl", lg: "3xl" }}
               >
-                Conclua seus estudos Fundamental e Médio
+                Conclua seus estudos Ensino Fundamental e Médio
               </Text>
-              <Text pt="6">
+              <Text pt="6" textAlign={"justify"}>
                 Com a conclusão do Ensino fundamental e o Ensino Médio você já
                 estará com as portas abertas o mercado de trabalho, pois
                 concluindo essa etapa, você estará pronto para prestar o
@@ -67,8 +68,9 @@ export default function Ensino() {
                 <b>Modalidade:</b> À distância
               </Text>
 
-              <SimpleGrid minChildWidth={"2"} pt={"6"}>
-                <Stack>
+              <SimpleGrid minChildWidth={"2"} pt={"4"}>
+              <Flex display={{ base: 'row', md: 'flex'}} p={2}>
+                <Stack mr={8}>
                   <List spacing={4}>
                     <ListItem>
                       <ListIcon as={CheckIcon} color="green.400" />
@@ -85,8 +87,8 @@ export default function Ensino() {
                   </List>
                 </Stack>
 
-                <Stack>
-                  <List spacing={4}>
+                <Stack >
+                  <List spacing={4} mt={{ base: 4, md: 0}}>
                     <ListItem>
                       <ListIcon as={CheckIcon} color="green.400" />
                       Flexibilidade de horário
@@ -101,13 +103,18 @@ export default function Ensino() {
                     </ListItem>
                   </List>
                 </Stack>
+                </Flex>
               </SimpleGrid>
             </Box>
-            <Image src="./images/eja2.png" width="440px" rounded={"10px"} />
+            <Image src="./images/eja2.png" 
+            mt={{ base: 4, md: 0}}
+            ml={{base: 2, md: 0}}
+            width={{base: '320', md: '440px'}}
+            rounded={"14px"} />
           </Flex>
         </SimpleGrid>
 
-        <Box pl={20}>
+        <Box pl={{base: 4, md: 20}}>
           <Text
             fontWeight={600}
             fontSize={{ base: "xl", sm: "1xl", lg: "2xl" }}
@@ -146,6 +153,7 @@ export default function Ensino() {
           </SimpleGrid>
         </Box>
       </Container>
+
 
           </>
   );

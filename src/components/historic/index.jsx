@@ -15,7 +15,7 @@ import {
 export default function Historic() {
   return (
     <>
-      <Container maxW={1324} pt={8}>
+      <Container maxW={1324} pt={8} pos={'relative'}>
         <Text
           bgGradient="linear-gradient(107deg, #EB4561 38.38%, #FFEB40 107.75%)"
           bgClip="text"
@@ -26,16 +26,17 @@ export default function Historic() {
           Não possui histórico escolar?
         </Text>
         <Text fontSize="xl" fontWeight="light" align="center" pt="2">
-          Ajudamos você a realizar seus sonhos. Como funciona:
+          Não se preocupe, nós ajudamos você a realizar seus sonhos. Como funciona:
         </Text>
         <SimpleGrid
           h={300}
           columns={{ base: 1, md: 3 }}
-          spacing={20}
+          spacing={{ base: 10, md: 20}}
           alignItems={"center"}
         >
           <Stack align={"center"}>
             <Text
+              mt={{base: 8, md: 0 }}
               w={12}
               h={12}
               align={"center"}
@@ -46,7 +47,7 @@ export default function Historic() {
               bg={"orange.900"}
               mb={1}
             >
-              01
+              1º
             </Text>
             <Text fontWeight={600} color={"orange.900"}>
               Avisar ao Cesas
@@ -70,7 +71,7 @@ export default function Historic() {
               bg={"orange.900"}
               mb={1}
             >
-              02
+              2º
             </Text>
             <Text fontWeight={600} color={"orange.900"}>
               Coordenação Pedagógica
@@ -81,7 +82,7 @@ export default function Historic() {
             </Text>
           </Stack>
 
-          <Stack pt={16} align={"center"}>
+          <Stack pt={{ base: 2, md: 16}} align={"center"}>
             <Text
               w={12}
               h={12}
@@ -93,7 +94,7 @@ export default function Historic() {
               bg={"orange.900"}
               mb={1}
             >
-              03
+              3º
             </Text>
             <Text fontWeight={600} color={"orange.900"}>
               Prova de Classificação

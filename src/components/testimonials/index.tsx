@@ -79,18 +79,23 @@ import {
     src,
     name,
     title,
+    describe,
   }: {
     src: string
     name: string
     title: string
+    describe: string
   }) => {
     return (
       <Flex align={'center'} mt={8} direction={'column'}>
-        <Avatar src={src} mb={2} />
+        <Avatar src={src} mb={2} w={100} h={100} />
         <Stack spacing={-1} align={'center'}>
           <Text fontWeight={600} color={'blue.900'}>{name}</Text>
           <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
             {title}
+          </Text>
+          <Text fontSize={'sm'} textAlign={'center'} fontStyle={'italic'} mt={'1'} color={useColorModeValue('gray.600', 'gray.400')}>
+            {describe}
           </Text>
         </Stack>
       </Flex>
@@ -118,42 +123,39 @@ import {
             spacing={{ base: 16, md: 4, lg: 10 }}>
             <Testimonial>
               <TestimonialContent>
-                <TestimonialHeading>Estudar na Select é incrivel</TestimonialHeading>
+                <TestimonialHeading>Seguir carreira Profissional</TestimonialHeading>
                 <TestimonialText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                  imperdiet nibh lectus feugiat nunc sem.
+                "É um aprendizado e conhecimento para eu seguir uma carreira profissional de sucesso com os cursos que eu fiz e estou fazendo. Os professores explicam muito bem e indico fazer os cursos pois as pessoas de sucesso passam por aqui!"
                 </TestimonialText>
               </TestimonialContent>
               <TestimonialAvatar
-                src={
-                  'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-                }
-                name={'Nome Completo'}
-                title={'Aluna do curso Operador de Computador'}
+                src={'/images/aluna1.jpg'}
+                name={'Amanda Emilly Moraes Oliveira'}
+                title={'Atualmente aluna de Auxiliar Administrativo'}
+                describe={'Já concluiu cursos de Operador de Computador, Designer Gráfico Profissional e Oratória'}
               />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
-                <TestimonialHeading>Aulas 100% práticas</TestimonialHeading>
+                <TestimonialHeading>Oportunidade de Qualificação</TestimonialHeading>
                 <TestimonialText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                  imperdiet nibh lectus feugiat nunc sem.
+                "Foi muito bom o curso, me abriu bastante a mente. Eu já trabalho com essa função, mas depois do curso eu aprendi mais. O curso da Select é muito bom, eu já havia feito o EJA, então eu já conhecia a escola. E então surgiu a oportunidade para eu me 
+                qualificar e aguarrei essa oportunidade e está sendo muito bom para mim."
                 </TestimonialText>
               </TestimonialContent>
               <TestimonialAvatar
-                src={
-                  'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-                }
-                name={'Nome Completo'}
-                title={'Aluna do curso Designer Gráfico'}
+                src={'/images/aluna2.jpg'}
+                name={'Andréia dos Santos Martins de Lima'}
+                title={'Atualmente aluna de Operador de Computador'}
+                describe={'Já concluiu o Ensino Fundamental, Médio e o curso de Auxiliar Administrativo'}
               />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
                 <TestimonialHeading>Vou concluir meus estudos</TestimonialHeading>
                 <TestimonialText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                  imperdiet nibh lectus feugiat nunc sem.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem. imperdiet nibh lectus feugiat nunc sem. imperdiet nibh lectus feugiat nunc sem.
+                   imperdiet nibh lectus feugiat nunc sem.imperdiet nibh lectus feugiat nunc sem.
                 </TestimonialText>
               </TestimonialContent>
               <TestimonialAvatar
@@ -162,6 +164,7 @@ import {
                 }
                 name={'Nome Completo'}
                 title={'Aluno do Ensino Médio'}
+                describe={'kjkj'}
               />
             </Testimonial>
           </Stack>

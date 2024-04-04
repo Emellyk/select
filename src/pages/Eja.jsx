@@ -8,9 +8,10 @@ function Eja() {
     <>
       <Box
         w="full"
-        h="62vh"
-        backgroundImage="./backgrounds/colegio3.png"
+        h={{ base: '32vh', md: "62vh"}}
+        backgroundImage="./backgrounds/colegio5.png"
         backgroundSize="cover"
+        backgroundRepeat={'no-repeat'}
       />
 
       <Container
@@ -24,7 +25,7 @@ function Eja() {
         <Ensino />
       </Container>
 
-      <Container maxW={"full"} bgColor={"#f5f5f5"} pb={10}>
+      <Container maxW={"full"} bgColor={"#f5f5f5"} pb={{ base: 500, md: 10}} >
         <Historic />
       </Container>
     </>

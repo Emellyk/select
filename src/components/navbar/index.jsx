@@ -16,10 +16,10 @@ const NavBar = (props) => {
 };
 
 const Logo = () => 
-<Image 
+  <Image 
  w={{ base: '50px', sm: '70px', lg: '100px' }}
  ml={10}
- src="./logomarca.svg"></Image>;
+ src="./logomarca.svg"></Image>
 
 const CloseIcon = () => (
   <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -33,8 +33,8 @@ const CloseIcon = () => (
 
 const MenuIcon = () => (
   <svg
-    width="24px"
-    viewBox="0 0 20 20"
+    width="26px"
+    viewBox="6 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     fill="white"
   >
@@ -53,7 +53,14 @@ const MenuToggle = ({ toggle, isOpen }) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
-    <Link href={to}>
+    <Link href={to}
+    px={2}
+      py={1}
+    rounded={'md'}
+    _hover={{
+      textDecoration: 'none',
+      bg: 'orange.100'
+    }}>
       <Text display="block" {...rest}>
         {children}
       </Text>
@@ -68,6 +75,7 @@ const MenuLinks = ({ isOpen }) => {
       flexBasis={{ base: "100%", md: "auto" }}
       mx={8}
       pb={1}
+      
     >
       <Stack
         spacing={{ base: '2', sm: '4', lg: '8' }}
@@ -100,7 +108,7 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       w="100%"
       mr={4}
-      bg={["transparent", "transparent", "transparent", "transparent"]}
+      bg={["white", "white", "white"]}
       color={["orange.900", "orange.900", "primary.700", "primary.700"]}
       {...props}
     >

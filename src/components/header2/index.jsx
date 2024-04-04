@@ -20,7 +20,7 @@ export default function Header2() {
     muted
     loop
     autoPlay='true'
-    src='/backgrounds/newhero4.mp4'
+    src={'/backgrounds/newhero4.mp4'}
     alt='hero'
     objectFit='contain'
     maxH={'cover'}
@@ -35,7 +35,7 @@ export default function Header2() {
         pb={{ base: '10', md: '20'}}
         >
           <SimpleGrid
-            pt={20}
+            pt={{base: '12', md: '20'}}
             spacing={{ base: 2, md: 6 }}
             columns={'4'}
             w={{ base: '100%', md: '2xl', lg: '3xl', xl: '5xl' }}
