@@ -71,7 +71,8 @@ export const theme = extendTheme({
         background: 'white.500',
       },
       button: {
-        w: '200px',
+        w: '300px',
+        h: '40px',
         color: 'white.500',
         boxShadow: '0 0px 4px 1px rgb(0 0 0 / 0.50%)',
         background: 'linear-gradient(98deg, #38DF58 32.07%, #C7CF21 74.25%)',

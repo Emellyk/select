@@ -6,6 +6,7 @@ import MaterialSlider from "../components/materialSlider";
 import { Courses } from "../components/courses";
 import Plans from "../components/plans";
 import Testimonials from "../components/testimonials";
+import { Courses2 } from "../components/courses copy";
 
 
 function Cursos() {
@@ -29,8 +30,7 @@ function Cursos() {
         <Ages />
         <MaterialSlider />
       </Container>
-
-<Courses/>
+      <Courses2 />
       <Plans />
       <Testimonials />
     </>

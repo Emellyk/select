@@ -5,17 +5,58 @@ import {
   Tab,
   TabPanel,
   Container,
-  SimpleGrid,
   Image,
   CardHeader,
   Card,
   CardBody,
   Text,
-  Heading,
-  position,
+  styled,
 } from "@chakra-ui/react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export function Courses() {
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { color } from "framer-motion";
+
+
+
+export function Courses2() {
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
+
   return (
     <>
       <Container maxW={"full"} bgColor={"#f5f5f5"} pt={4}>
@@ -34,208 +75,224 @@ export function Courses() {
             Conheça nossos cursos e escolha o que mais combina com você
           </Text>
 
-          <Tabs variant={"tabsTheme" }
-          orientation={'vertical'}
+          <Tabs variant={"tabsTheme"}
+          maxWidth={{base: '100%', md: '90%'}}
+          align={"center"}
+          size={'sm'}
+          py={"8"}
+          fontSize={'sm'}>
+            <TabList mt={"4"} px={'10'}>
+              <Tab mb={'6'} fontSize={{ base: 'sm', md: 'md' }}>Operador de Computador</Tab>
+            </TabList>
+            <TabPanels >
+
+              {/* OPERADOR DE COMPUTADOR */}
+              <Slider {...settings} >
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses1.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Operador para Jovens e Adultos
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses2.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Curso para Adultos - Excel
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses3.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Curso para Crianças - Operador Kids
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses4.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Crianças aprendem com diversão
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses1.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Operador para Jovens e Adultos
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses2.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Curso para Adultos - Excel
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses3.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Curso para Crianças - Operador Kids
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/courses4.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                        Crianças aprendem com diversão
+                      </Text>
+                      <Text pt={"5"}>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit consequatur, nam.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+              </Slider>
+            </TabPanels>
+          </Tabs>
+
+              <Tabs variant={"tabsTheme" }
           maxWidth={'90%'}
+          align={"center"}
           size={'sm'}
           py={"8"}
           fontSize={'sm'}>
             <TabList mt={"4"}>
-              <Tab fontSize={{ base: 'sm', md: 'md' }}>Operador de Computador</Tab>
-              <Tab>Designer Gráfico</Tab>
+              <Tab fontSize={{ base: 'sm', md: 'md' }}>Designer Gráfico</Tab>
               <Tab>Manutenção em Comp. e Notbooks</Tab>
               <Tab>AutoCAD</Tab>
-              <Tab>Auxiliar Administrativo</Tab>
-              <Tab>Oratória</Tab>
-              <Tab>Ensino EJA</Tab>
             </TabList>
             <TabPanels>
 
-              {/* OPERADOR DE COMPUTADOR */}
-              <TabPanel>
-                <SimpleGrid
-                  gap="4"
-                  spacing={4}
-                  templateColumns={{ base: "repeat(auto-fill, minmax(100px, 3fr))", md: "repeat(auto-fill, minmax(220px, 1fr))"}}
-                >
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses1.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Operador para Jovens e Adultos
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses2.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Adultos - Excel
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses3.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Crianças - Operador Kids
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses4.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Crianças aprendem com diversão
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses1.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Operador para Jovens e Adultos
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses2.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Adultos - Excel
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses3.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Crianças - Operador Kids
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-
-                  <Card
-                    bgColor={"transparent"}
-                    fontWeight={"light"}
-                    variant={"unstyled"}
-                    color={"blue.900"}
-                    fontSize={"16"}
-                  >
-                    <CardHeader>
-                      <Image src="/courses/courses4.svg" />
-                    </CardHeader>
-                    <CardBody>
-                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Crianças aprendem com diversão
-                      </Text>
-                      <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
-                      </Text>
-                    </CardBody>
-                  </Card>
-                </SimpleGrid>
-              </TabPanel>
-
               {/* DESIGNER GRÁFICO */}
 
-              <TabPanel>
-                <SimpleGrid
-                  gap="6"
-                  spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
-                >
+            <TabPanel>            
+              <Slider {...settings}>
+              <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -256,7 +313,10 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -277,7 +337,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -298,7 +360,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -319,7 +383,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -340,7 +406,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -361,7 +429,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -382,7 +452,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -403,17 +475,15 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
-                </SimpleGrid>
-              </TabPanel>
+                  </div>
+                  </Slider>
+                  </TabPanel>
 
               {/* MANUTENÇÃO EM COMP. E NOTBOOKS */}
 
-              <TabPanel>
-                <SimpleGrid
-                  gap="6"
-                  spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
-                >
+                  <TabPanel>
+                  <Slider {...settings}>
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -434,7 +504,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -455,7 +527,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -476,7 +550,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -497,7 +573,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -518,7 +596,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -539,7 +619,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -560,7 +642,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -581,17 +665,15 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
-                </SimpleGrid>
-              </TabPanel>
+                  </div>
+                  </Slider>
+                  </TabPanel>
 
               {/* AUTOCAD */}
 
               <TabPanel>
-                <SimpleGrid
-                  gap="6"
-                  spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
-                >
+                <Slider {...settings}>
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -612,7 +694,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -633,7 +717,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -654,7 +740,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -675,7 +763,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -696,7 +786,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -717,7 +809,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -738,7 +832,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -759,17 +855,30 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
-                </SimpleGrid>
+                  </div>
+                  </Slider>
               </TabPanel>
+            </TabPanels>
+          </Tabs>
+
+
+          <Tabs variant={"tabsTheme" }
+          maxWidth={'90%'}
+          align={'center'}
+          size={'sm'}
+          py={"8"}
+          fontSize={'sm'}>
+            <TabList mt={"4"}>
+              <Tab fontSize={{ base: 'sm', md: 'md' }}>Auxiliar Administrativo</Tab>
+              <Tab>Oratória</Tab>
+            </TabList>
+            <TabPanels>
 
               {/* AUXILIAR ADMNISTRATIVO */}
 
-              <TabPanel>
-                <SimpleGrid
-                  gap="6"
-                  spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
-                >
+                <TabPanel>
+                <Slider {...settings}>
+                <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -790,7 +899,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -811,7 +922,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -832,7 +945,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -853,7 +968,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -874,7 +991,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -895,7 +1014,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -916,7 +1037,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -937,17 +1060,16 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
-                </SimpleGrid>
+                  </div>
+                </Slider>
               </TabPanel>
+
 
               {/* ORATÓRIA */}
 
-              <TabPanel>
-                <SimpleGrid
-                  gap="6"
-                  spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
-                >
+                  <TabPanel>
+                  <Slider {...settings}>
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -968,7 +1090,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -989,7 +1113,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1010,7 +1136,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1031,7 +1159,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1052,7 +1182,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1073,7 +1205,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1094,7 +1228,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1115,16 +1251,31 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
-                </SimpleGrid>
+                  </div>
+                  </Slider>
               </TabPanel>
+              </TabPanels>
+              </Tabs>
 
-              {/* ENSINO EJA */}
+
+              <Tabs variant={"tabsTheme" }
+          maxWidth={'90%'}
+          align={"center"}
+          size={'sm'}
+          py={"8"}
+          fontSize={'sm'}>
+            <TabList mt={"4"}>
+              <Tab fontSize={{ base: 'sm', md: 'md' }}>Ensino EJA</Tab>
+              <Tab>Ensino Fundamental</Tab>
+              <Tab>Ensino Médio</Tab>
+            </TabList>
+            <TabPanels>
+
+            {/* ENSINO EJA */}
+            
               <TabPanel>
-                <SimpleGrid
-                  gap="6"
-                  spacing={4}
-                  templateColumns="repeat(auto-fill, minmax(220px, 1fr))"
-                >
+                <Slider {...settings}>
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1145,7 +1296,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1166,7 +1319,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1187,7 +1342,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1208,7 +1365,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1229,7 +1388,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1250,7 +1411,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1271,7 +1434,9 @@ export function Courses() {
                       </Text>
                     </CardBody>
                   </Card>
+                  </div>
 
+                  <div>
                   <Card
                     bgColor={"transparent"}
                     fontWeight={"light"}
@@ -1291,8 +1456,9 @@ export function Courses() {
                         elit. Velit consequatur, nam.
                       </Text>
                     </CardBody>
-                  </Card>
-                </SimpleGrid>
+                    </Card>
+                </div>
+                </Slider>
               </TabPanel>
             </TabPanels>
           </Tabs>
