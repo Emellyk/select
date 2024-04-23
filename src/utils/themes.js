@@ -71,7 +71,7 @@ export const theme = extendTheme({
         background: 'white.500',
       },
       button: {
-        w: '300px',
+        w: '255px',
         h: '40px',
         color: 'white.500',
         boxShadow: '0 0px 4px 1px rgb(0 0 0 / 0.50%)',

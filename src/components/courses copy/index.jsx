@@ -75,13 +75,15 @@ export function Courses2() {
             Conheça nossos cursos e escolha o que mais combina com você
           </Text>
 
+
+          <Text fontSize={{ base: 'sm', md: "xl"}} color={'orange.900'} fontWeight="bold" pt="5">
+            Curso de Informática Básica - Ideal para iniciantes:
+          </Text>
           <Tabs variant={"tabsTheme"}
           maxWidth={{base: '100%', md: '90%'}}
-          align={"center"}
           size={'sm'}
-          py={"8"}
           fontSize={'sm'}>
-            <TabList mt={"4"} px={'10'}>
+            <TabList mt={"4"}>
               <Tab mb={'6'} fontSize={{ base: 'sm', md: 'md' }}>Operador de Computador</Tab>
             </TabList>
             <TabPanels >
@@ -275,11 +277,13 @@ export function Courses2() {
             </TabPanels>
           </Tabs>
 
-              <Tabs variant={"tabsTheme" }
-          maxWidth={'90%'}
-          align={"center"}
+
+          <Text fontSize={{ base: 'sm', md: "xl"}} mt={'12'} color={'orange.900'} fontWeight="bold" pt="5">
+            Informática Avançada - Cursos Profissionalizantes:
+          </Text>
+          <Tabs variant={"tabsTheme" }
+          maxWidth={{base: '100%', md: '90%'}}
           size={'sm'}
-          py={"8"}
           fontSize={'sm'}>
             <TabList mt={"4"}>
               <Tab fontSize={{ base: 'sm', md: 'md' }}>Designer Gráfico</Tab>
@@ -299,6 +303,7 @@ export function Courses2() {
                     variant={"unstyled"}
                     color={"blue.900"}
                     fontSize={"16"}
+                    p={'0'}
                   >
                     <CardHeader>
                       <Image src="/courses/des1.svg" />
