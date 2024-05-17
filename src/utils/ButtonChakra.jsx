@@ -11,9 +11,9 @@ const baseStyle = definePartsStyle({
     fontSize: { base: 'sm', md: 'md' },
     fontWeight: 'bold',
     rounded: 'md',
-    bg: 'transparent',
+    bg: 'white.500',
     color: 'orange.900',
-    _hover: { bg: 'white.500' },
+    _hover: { bg: 'orange.100' },
     _selected: {
       bg: 'orange.900',
       color: 'white.500'

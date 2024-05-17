@@ -60,7 +60,7 @@ export default function Header2() {
                 </Text>
                 <Text align="center"
                 fontSize={{ base: '2xs', md: 'md'}}>
-                  Eleita há 19 anos a melhor escola de cursos de Sinop
+                  Há 19 anos seguidos, somos a escolha número um em cursos em Sinop, graças à nossa excelência.
                 </Text>
               </CardBody>
             </Card>
@@ -82,7 +82,7 @@ export default function Header2() {
                 </Text>
                 <Text align="center"
                 fontSize={{ base: '2xs', md: 'md'}}>
-                  Profissionais qualificados com garantia de aprendizado
+                  Nossos instrutores especializados garantem uma experiência de aprendizado de alta qualidade.
                 </Text>
               </CardBody>
             </Card>
@@ -126,7 +126,7 @@ export default function Header2() {
                 </Text>
                 <Text align="center"
                 fontSize={{ base: '2xs', md: 'md'}}>
-                  Desde 1994 fazendo história e transformando vidas
+                  Desde 1994, fazendo história e transformando vidas
                 </Text>
               </CardBody>
             </Card>

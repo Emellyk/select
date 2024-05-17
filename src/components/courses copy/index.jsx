@@ -59,7 +59,7 @@ export function Courses2() {
 
   return (
     <>
-      <Container maxW={"full"} bgColor={"#f5f5f5"} pt={4}>
+      <Container maxW={"full"} bgColor={"#f5f5f5"} py={6}>
         <Container maxW={"1324px"}>
           <Text
             bgGradient={"linear(to-tr, #EB4561, #FFEB40)"}
@@ -80,6 +80,7 @@ export function Courses2() {
             Curso de Informática Básica - Ideal para iniciantes:
           </Text>
           <Tabs variant={"tabsTheme"}
+          align="center"
           maxWidth={{base: '100%', md: '90%'}}
           size={'sm'}
           fontSize={'sm'}>
@@ -106,8 +107,7 @@ export function Courses2() {
                         Operador para Jovens e Adultos
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Domine as principais tecnologias de informática
                       </Text>
                     </CardBody>
                   </Card>
@@ -129,8 +129,7 @@ export function Courses2() {
                         Curso para Adultos - Excel
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Aprenda a gerênciar e criar planilhas de controles e produtividade.
                       </Text>
                     </CardBody>
                   </Card>
@@ -152,8 +151,7 @@ export function Courses2() {
                         Curso para Crianças - Operador Kids
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Crianças aprendem desde cedo os cuidados e a forma correta de utilizar o computador.
                       </Text>
                     </CardBody>
                   </Card>
@@ -175,8 +173,7 @@ export function Courses2() {
                         Crianças aprendem com diversão
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        De forma lúdica e divertida os alunos aprendem a usar ferramentas utilizadas durante a vida estudantil.
                       </Text>
                     </CardBody>
                   </Card>
@@ -195,11 +192,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Operador para Jovens e Adultos
+                        Noçoes básicas de informática
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Entenda como o computador funciona de um modo geral, como instalar e desinstalar programas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -218,11 +214,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Adultos - Excel
+                        Formatação de trabalhos escolares e apresentações
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Formatação padrão de documentos em normas da ABNT. Utilizados na vida acadêmica e profissional.
                       </Text>
                     </CardBody>
                   </Card>
@@ -241,11 +236,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Crianças - Operador Kids
+                        Manutenção preventiva e Cuidados na internet
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Saiba como cuidar do seu equipamento e navegar de forma segura na internet.
                       </Text>
                     </CardBody>
                   </Card>
@@ -264,11 +258,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Crianças aprendem com diversão
+                        Opere sem medo seu computador
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Desenvolva habilidades e perca o medo de utilizar seu computador, e o melhor, usar a seu favor com as necessidades cotidianas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -278,17 +271,18 @@ export function Courses2() {
           </Tabs>
 
 
-          <Text fontSize={{ base: 'sm', md: "xl"}} mt={'12'} color={'orange.900'} fontWeight="bold" pt="5">
+          <Text fontSize={{ base: 'sm', md: "xl"}} mt={'16'} color={'orange.900'} fontWeight="bold" pt="5">
             Informática Avançada - Cursos Profissionalizantes:
           </Text>
-          <Tabs variant={"tabsTheme" }
+          <Tabs variant={"tabsTheme"}
+          align="center"
           maxWidth={{base: '100%', md: '90%'}}
           size={'sm'}
           fontSize={'sm'}>
             <TabList mt={"4"}>
               <Tab fontSize={{ base: 'sm', md: 'md' }}>Designer Gráfico</Tab>
-              <Tab>Manutenção em Comp. e Notbooks</Tab>
-              <Tab>AutoCAD</Tab>
+              <Tab fontSize={{ base: 'sm', md: 'md' }}>Manutenção de Computadores e Notbooks</Tab>
+              <Tab fontSize={{ base: 'sm', md: 'md' }}>AutoCAD</Tab>
             </TabList>
             <TabPanels>
 
@@ -310,11 +304,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Designer Gráfico Profissional
+                        Domine as ferramentas de Designer
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Aprenda a utilizar as principais ferramentas de Designer utilizadas atualmente.
                       </Text>
                     </CardBody>
                   </Card>
@@ -334,11 +327,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Edição de Imagens
+                        Adobe Photoshop - Edição de Imagens
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Principal programa para manipulação de imagens e melhoramento de imagens.
                       </Text>
                     </CardBody>
                   </Card>
@@ -357,11 +349,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Identidade Visual Completa
+                        Identidade Visual para marcas
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Utilize sua criativade para criar logomarcas, cartões de visitas, outdoors e todos os tipos de elementos visuais para marcas e empresas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -380,11 +371,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Aulas Práticas
+                        Atividades práticas completas
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Trabalho final do curso com entrega totalmente autoral do aluno já para fazer parte do seu portfólio profissional.
                       </Text>
                     </CardBody>
                   </Card>
@@ -403,11 +393,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Operador para Jovens e Adultos
+                        Profissional de fotografia 
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Crie books fotográficos profissionais, utilizando filtros e melhoramento da qualidade das imagens.
                       </Text>
                     </CardBody>
                   </Card>
@@ -426,11 +415,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Adultos - Excel
+                        Profissional de Marketing Digital
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Desenvolva artes e publicações para as principais redes sociais, com as medidas corretas para vários modelos de anuncios.
                       </Text>
                     </CardBody>
                   </Card>
@@ -449,11 +437,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Crianças - Operador Kids
+                        Profissional para Gráficas e Agencias de Publicidade
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Saiba como utilizar as métricas para impressão e escalonamento de artes de tamanhos variados.
                       </Text>
                     </CardBody>
                   </Card>
@@ -472,11 +459,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Crianças aprendem com diversão
+                        Diagramação de revistas e jornais
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Programas específicos para utilização de documentos com textos, como revistas, jornais e informativos. Configure para ser impresso ou publicado de forma digital.
                       </Text>
                     </CardBody>
                   </Card>
@@ -504,8 +490,7 @@ export function Courses2() {
                         Manutenção em Computadores
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Conheça as peças e aprenda a montar e desmontar computadores.
                       </Text>
                     </CardBody>
                   </Card>
@@ -524,11 +509,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Manutenção em Notbooks
+                        Peças e suas Funções
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Compreenda o funcionamento de cada peça e quais diferenças para ter melhor desempenho do equipamento.
                       </Text>
                     </CardBody>
                   </Card>
@@ -547,11 +531,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Montagem e Desmontagem
+                        Montagem e Desmontagem em Notbooks
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Saiba como manusear corretamente as peças, identificar onde está o problema e como arruma-lo.
                       </Text>
                     </CardBody>
                   </Card>
@@ -570,11 +553,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Formatação e Instalação dos Principais Programas
+                        Formatação e Instalação do Sistema Operacional
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Faça a formatação e instalação do sistema operacional e como configura-lo da forma correta.
                       </Text>
                     </CardBody>
                   </Card>
@@ -593,11 +575,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Operador para Jovens e Adultos
+                        Hardware x Software
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Principais conceitos da parte física e lógica de computadores.
                       </Text>
                     </CardBody>
                   </Card>
@@ -616,11 +597,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Adultos - Excel
+                        Profissional de Técnico em Informática
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Torne-se um profissional competente nesse mercado.
                       </Text>
                     </CardBody>
                   </Card>
@@ -639,11 +619,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Curso para Crianças - Operador Kids
+                        Instalação dos Principais Programas e Periféricos
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Faça instalações dos programas mais utilizados.
                       </Text>
                     </CardBody>
                   </Card>
@@ -662,11 +641,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Crianças aprendem com diversão
+                        Limpeza Profissional do Equipamento
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        De tempos em tempos é necessário fazer limpeza interna de todas as peças para garantir o melhor funcionamento e evitar danos.
                       </Text>
                     </CardBody>
                   </Card>
@@ -691,11 +669,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        AutoCad
+                      Fundamentos do AutoCAD
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Introdução à interface do programa, configurações básicas e navegação.
                       </Text>
                     </CardBody>
                   </Card>
@@ -714,11 +691,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Plantas Residenciais
+                      Desenho e Edição
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Aprenda as ferramentas de desenho, como linhas, polígonos, círculos, elipses, entre outros, bem como técnicas de edição, como mover, copiar, espelhar e estender.
                       </Text>
                     </CardBody>
                   </Card>
@@ -737,11 +713,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Principais Configurações
+                      Dimensionamento e Anotação
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Utilização de ferramentas para adicionar dimensões, textos e outras anotações aos desenhos.
                       </Text>
                     </CardBody>
                   </Card>
@@ -760,11 +735,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Principais Configurações
+                      Organização e Estruturação
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Aprender a criar e gerenciar camadas, blocos e referências externas para manter os desenhos organizados e facilmente editáveis.
                       </Text>
                     </CardBody>
                   </Card>
@@ -783,11 +757,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Principais Configurações
+                      Modelagem 3D
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Introdução à modelagem tridimensional, incluindo a criação de sólidos, superfícies e malhas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -806,11 +779,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Principais Configurações
+                      Renderização e Visualização
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Noções básicas de como aplicar materiais, luzes e texturas para criar renderizações realistas dos modelos.
                       </Text>
                     </CardBody>
                   </Card>
@@ -829,11 +801,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Principais Configurações
+                      Plotagem e Impressão
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Configuração de layouts de impressão e preparação de desenhos para impressão em escala.
                       </Text>
                     </CardBody>
                   </Card>
@@ -852,11 +823,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Principais Configurações
+                      Normas e Padronização
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Conhecimento das normas e padrões de desenho técnico utilizados na indústria, garantindo a conformidade com requisitos específicos de cada projeto.
                       </Text>
                     </CardBody>
                   </Card>
@@ -867,11 +837,13 @@ export function Courses2() {
           </Tabs>
 
 
+          <Text fontSize={{ base: 'sm', md: "xl"}} mt={'16'} color={'orange.900'} fontWeight="bold" pt="5">
+            Administrativos - Cursos Profissionalizantes:
+          </Text>
           <Tabs variant={"tabsTheme" }
           maxWidth={'90%'}
           align={'center'}
           size={'sm'}
-          py={"8"}
           fontSize={'sm'}>
             <TabList mt={"4"}>
               <Tab fontSize={{ base: 'sm', md: 'md' }}>Auxiliar Administrativo</Tab>
@@ -896,11 +868,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Auxiliar Administrativo
+                        Rotinas Administrativas
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Organização e arquivamento de documentos. Redação e formatação de correspondências e relatórios. Atendimento telefônico e ao público.
                       </Text>
                     </CardBody>
                   </Card>
@@ -919,11 +890,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades em Grupo
+                      Gestão de Escritório
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Controle de agendas e compromissos. Planejamento e organização de reuniões e eventos. Gerenciamento de suprimentos de escritório.
                       </Text>
                     </CardBody>
                   </Card>
@@ -942,11 +912,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades Práticas
+                      Noções de Contabilidade
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Lançamentos contábeis básicos. Emissão e controle de notas fiscais. Noções de fluxo de caixa e conciliação bancária.
                       </Text>
                     </CardBody>
                   </Card>
@@ -965,11 +934,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades Práticas
+                      Recursos Humanos
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Noções básicas de recrutamento e seleção. Controle de ponto e folha de pagamento. Arquivamento e controle de documentos de funcionários.
                       </Text>
                     </CardBody>
                   </Card>
@@ -988,11 +956,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades Práticas
+                      Comunicação Empresarial:
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Técnicas de comunicação escrita e verbal. Atendimento ao cliente e relacionamento interpessoal. Etiqueta empresarial e comportamento profissional.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1011,11 +978,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades Práticas
+                      Noções de Recursos Humanos
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Técnicas de organização pessoal e profissional. Métodos para aumentar a eficiência e produtividade no ambiente de trabalho. Prioridade de tarefas e gestão de prazos.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1034,11 +1000,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades Práticas
+                      Atendimento ao Cliente
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Técnicas de atendimento e satisfação do cliente. Resolução de conflitos e reclamações. Manutenção de um bom relacionamento com clientes e fornecedores.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1057,11 +1022,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades Práticas
+                      Ética e Comportamento Profissional
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Princípios de ética no ambiente de trabalho. Postura e comportamento profissional. Sigilo e confidencialidade de informações.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1087,11 +1051,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Oratória
+                        Expressão Verbal
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Aprender a projetar a voz, articular as palavras de forma clara e enfatizar pontos importantes para garantir que a mensagem seja compreendida e recebida com clareza.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1110,11 +1073,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Atividades em Grupo
+                      Expressão Corporal
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Desenvolver habilidades de postura, gestos e movimentos corporais que transmitam confiança, autoridade e envolvam a audiência durante a apresentação.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1133,11 +1095,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Perca o medo de falar em Público
+                      Controle do Nervosismo
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                        Técnicas de relaxamento e respiração, estratégias para lidar com o medo de falar em público, desenvolvimento de autoconfiança.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1156,11 +1117,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Decubra o poder que existe em você
+                      Comunicação Não Verbal
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Linguagem corporal e postura, expressões faciais, gestos e movimentos no palco.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1179,11 +1139,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Decubra o poder que existe em você
+                      Estruturação do Discurso
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Organização de ideias e construção de um discurso coerente. Técnicas de introdução, desenvolvimento e conclusão de uma apresentação. Uso de histórias, exemplos e analogias para tornar o discurso mais envolvente.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1202,11 +1161,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Decubra o poder que existe em você
+                      Interação com o Público
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Técnicas para captar e manter a atenção da audiência. Estratégias para envolver o público e incentivar a participação. Respostas a perguntas e gerenciamento de situações inesperadas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1225,11 +1183,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Decubra o poder que existe em você
+                      Uso de Recursos Visuais
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Eficácia no uso de slides, vídeos e outros recursos multimídia. Técnicas para integrar recursos visuais de forma a complementar o discurso, sem distrair o público.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1248,11 +1205,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Decubra o poder que existe em você
+                      Feedback e Melhoria Contínua
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Recebimento e interpretação de feedback construtivo. Autoavaliação e identificação de áreas para melhoria. Prática contínua e ajustes baseados em experiências passadas.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1262,12 +1218,13 @@ export function Courses2() {
               </TabPanels>
               </Tabs>
 
-
+              <Text fontSize={{ base: 'sm', md: "xl"}} mt={'16'} color={'orange.900'} fontWeight="bold" pt="5">
+            Educação para Jovens e Adultos - Conclua seus estudos:
+          </Text>
               <Tabs variant={"tabsTheme" }
           maxWidth={'90%'}
           align={"center"}
           size={'sm'}
-          py={"8"}
           fontSize={'sm'}>
             <TabList mt={"4"}>
               <Tab fontSize={{ base: 'sm', md: 'md' }}>Ensino EJA</Tab>
@@ -1293,11 +1250,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Educação Jovens e Adultos
+                      Desenvolvimento de Habilidades Gerais
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Tecnologia da Informação e Comunicação: Uso básico de computadores e internet. Ferramentas de produtividade (editores de texto, planilhas, apresentações).
                       </Text>
                     </CardBody>
                   </Card>
@@ -1316,11 +1272,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Termine seus estudos
+                      Educação para a Cidadania
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Direitos e deveres do cidadão. Noções de economia e mercado de trabalho. Sustentabilidade e responsabilidade social.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1339,11 +1294,10 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Ensino Fundamental e Médio
+                      Preparação para o Mercado de Trabalho
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Elaboração de currículos e cartas de apresentação. Técnicas de entrevista de emprego. Desenvolvimento de habilidades socioemocionais.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1362,11 +1316,106 @@ export function Courses2() {
                     </CardHeader>
                     <CardBody>
                       <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
-                        Ensino EJA
+                      O EJA modelo rápido oferece uma formação condensada
                       </Text>
                       <Text pt={"5"}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit consequatur, nam.
+                      Focada nos conteúdos essenciais, permitindo que os alunos concluam seus estudos de forma mais ágil e possam avançar em suas carreiras ou continuar sua educação em níveis mais elevados.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+                </Slider>
+              </TabPanel>
+
+
+
+              {/* ENSINO FUNDAMENTAL */}
+            
+              <TabPanel>
+                <Slider {...settings}>
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/eja1.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                      Desenvolvimento de Habilidades Gerais
+                      </Text>
+                      <Text pt={"5"}>
+                      Tecnologia da Informação e Comunicação: Uso básico de computadores e internet. Ferramentas de produtividade (editores de texto, planilhas, apresentações).
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/eja2.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                      Educação para a Cidadania
+                      </Text>
+                      <Text pt={"5"}>
+                      Direitos e deveres do cidadão. Noções de economia e mercado de trabalho. Sustentabilidade e responsabilidade social.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/eja3.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                      Preparação para o Mercado de Trabalho
+                      </Text>
+                      <Text pt={"5"}>
+                      Elaboração de currículos e cartas de apresentação. Técnicas de entrevista de emprego. Desenvolvimento de habilidades socioemocionais.
+                      </Text>
+                    </CardBody>
+                  </Card>
+                  </div>
+
+                  <div>
+                  <Card
+                    bgColor={"transparent"}
+                    fontWeight={"light"}
+                    variant={"unstyled"}
+                    color={"blue.900"}
+                    fontSize={"16"}
+                  >
+                    <CardHeader>
+                      <Image src="/courses/eja1.svg" />
+                    </CardHeader>
+                    <CardBody>
+                      <Text pt={"2"} fontWeight={"bold"} color={"orange.900"}>
+                      O EJA modelo rápido oferece uma formação condensada
+                      </Text>
+                      <Text pt={"5"}>
+                      Focada nos conteúdos essenciais, permitindo que os alunos concluam seus estudos de forma mais ágil e possam avançar em suas carreiras ou continuar sua educação em níveis mais elevados.
                       </Text>
                     </CardBody>
                   </Card>
@@ -1465,6 +1514,8 @@ export function Courses2() {
                 </div>
                 </Slider>
               </TabPanel>
+ 
+
             </TabPanels>
           </Tabs>
         </Container>
